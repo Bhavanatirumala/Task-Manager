@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Task Manager</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <div id="task-form">
+            <input type="text" id="task-input" placeholder="Task" required>
+            <select id="priority-select">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <select id="category-select">
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="Errands">Errands</option>
+            </select>
+            <button id="add-task">Add Task</button>
+        </div>
+
+        <div id="resource-usage">
+            <h2>Resource Usage</h2>
+            <p>Storage Usage: <span id="storage-usage">100 MB</span></p>
+            <p>Memory Usage: <span id="memory-usage">200 MB</span></p>
+            <p>Ram Usage: <span id="ram-usage">400 MB</span></p>
+        </div>
+
+        <ul id="task-list">
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
